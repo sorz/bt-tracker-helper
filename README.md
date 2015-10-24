@@ -1,5 +1,7 @@
 # BitTorrent Tracker Firewall Helper
 
+[Chinese (中文)](https://blog.sorz.org/p/bt-tracker-helper/)
+
 It's known that detecting BT traffic itself is difficult.
 However, in most of time, BT client will connect to some tracker servers 
 during running. This kind of connections  can be detected easily by a few
