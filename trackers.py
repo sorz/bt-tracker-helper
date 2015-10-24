@@ -164,12 +164,15 @@ def main():
 
     if args.action == 'torrent':
         action_torrent(args)
-    if args.action == 'ipset':
+    elif args.action == 'ipset':
         action_ipset(args)
-    if args.action == 'iptables':
+    elif args.action == 'iptables':
         action_iptables(args)
-    if args.action == 'raw':
+    elif args.action == 'raw':
         action_raw(args)
+    else:
+        print('Usage: %s -h/--help' % sys.argv[0], file=sys.stderr)
+        sys.exit(2)
 
 
 if __name__ == '__main__':
